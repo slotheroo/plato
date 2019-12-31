@@ -1,0 +1,13 @@
+plato.exe
+plato
+pkg
+src
+*.bak
+*.DS_Store
+vendor
+Gopkg.lock
+.env
+.testenv
+launch.sh
+.mysqlenv
+out
