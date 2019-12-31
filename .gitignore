@@ -11,3 +11,5 @@ Gopkg.lock
 launch.sh
 .mysqlenv
 out
+store
+static/musics/*
