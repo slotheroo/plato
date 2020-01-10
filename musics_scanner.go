@@ -18,8 +18,19 @@ import (
 func ScanAll() ([]Track, error) {
 	var (
 		tracks []Track
+		err    error
 	)
-	err := filepath.Walk(StaticDir+MusicsDir, func(path string, info os.FileInfo, err error) error {
+	/*wd, err := os.Getwd()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println("PWD:", wd)
+	abs, err := filepath.Abs(StaticDir + MusicsDir)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println("ABS:", abs)*/
+	err = filepath.Walk(StaticDir+MusicsDir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			log.Printf("Scanner encountered an error accessing the path %q: %v\n", path, err)
 			return err
