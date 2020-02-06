@@ -1,7 +1,6 @@
 plato.exe
 plato
 pkg
-src
 *.bak
 *.DS_Store
 vendor

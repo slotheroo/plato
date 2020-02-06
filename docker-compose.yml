@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  platoserver:
+    build: ./platoserver
+    ports:
+      - "3009:3009"
+    volumes:
+      - type: bind
+        source: ./platoserver/static/musics
+        target: /go/src/github.com/slotheroo/plato/platoserver/static/musics
